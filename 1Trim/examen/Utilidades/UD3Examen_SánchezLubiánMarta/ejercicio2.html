@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crea una página web que contenga un formulario con los siguientes campos de
+    información" />
+    <meta name="keywords" content="palabra1, palabra2, palabra3" />
+    <meta name="author" content="Marta Sánchez Lubián" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Formulario Examen HTML5</title>
+</head>
+<body>
+    <form method="get" action="/send/insertar_cv.html">
+        <fieldset>
+            <legend>Rellenar</legend>
+            <label>
+                <select>
+                    <option value="Hombre">Hombre</option>
+                    <option value="Mujer">Mujer</option>
+                </select>
+            </label>
+            <br/>
+            <label>
+                Elija un color:
+                <input type="color">
+            </label>
+            <br/>
+            <label>
+                Elija una fecha
+                <input type="date">
+            </label>
+            <br/>
+            <label>
+                <input type="radio" name="Lenguaje" value="lenguajejava">Java
+                <input type="radio" name="Lenguaje" value="lenguajepython">Python
+                <input type="radio" name="Lenguaje" value="lenguajehtml">HTML
+                <input type="radio" name="Lenguaje" value="lenguajevisual_basic">Visual 
+                <input type="radio" name="Lenguaje" value="lenguajecss">CSS
+            </label>
+            <br/>
+            <label>
+                <input type="checkbox" name="sexo" value="sexohombre">Hombre
+                <input type="checkbox" name="sexo" value="sexomujer">Mujer
+            </label>
+            <br/>
+            <label>
+                Elija un fichero:<input type="file"/>
+            </label>
+            <br/>
+            <label>
+                <textarea placeholder="Por favor, escriba aquí" rows="8" cols="60"></textarea>
+            </label>
+            <br/>
+            <label>
+                Instituto <input type="name" name="instituto"/><br/>
+                Estudios elegidos <input type="name" name="estudios"/><br/>
+                Nombre <input type="name" name="inombre"/><br/>
+                Apellidos <input type="name" name="apellidos"/><br/>
+                Email <input type="email" name="email"/><br/>
+                <br/>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Rellene las opciones siguientes</legend>
+            <label>
+                <input type="checkbox" name="sistema" value="sistemawindows">Windows
+            <input type="checkbox" name="sistema" value="sistemamac">Mac
+            <input type="checkbox" name="sistema" value="sistemalinux">Linux
+            </label>
+            <br/>
+            <label>
+                Elija una hora<input type="time"/>
+            </label>
+            <br/>
+            <label>
+                <input type="radio" name="procesador" value="procesadoramd">AMD
+                <input type="radio" name="procesador" value="procesadorintel_i5">Intel i5
+                <input type="radio" name="procesador" value="procesadorintel_i7">Intel i7
+            </label>
+            <br/>
+            <label>
+                Elija un fichero <input type="file">
+            </label>
+        </fieldset>
+        <br/>
+        <br/>
+        <input type="submit" value="Enviar Formulario">
+        <input type="reset" value="Borrar los datos introducidos">
+    </form>
+</body>
+</html>
+

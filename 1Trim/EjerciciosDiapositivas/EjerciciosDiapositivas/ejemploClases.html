@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo formulario</title>
+</head>
+<body>
+    <br/>
+    <form>
+        
+        <input type="number" value="5.0">
+        <input type="number" value="10">
+        <input type="number" value="-5">
+    </form>
+    <br/>
+    <form>
+        <input type="range" value="5.0">
+        <input type="range" value="10">
+        <input type="range" value="-5">
+    </form> 
+    <br/>
+    <form>
+        <input type="range" value="5.0"     
+        onInput="this.nextElementSibling.value=this.value">
+        <output>5.0</output>
+    </form>
+    <br/>
+    <form method="post" action="/send/">
+        Un valor numérico:
+        <input type="number" value="0" min="10" max="50" step="5">
+        Un valor numérico en rango:
+        <input type="range" value="25" min="10" max="50"
+        onInput="this.nextElementSibling.value = this.value" step="5">
+        <output>25</output>
+        </form>
+
+        <form method="post" action="/send/">
+            Nombre: <input name="nickname">
+            <textarea name="text">
+Este es el valor de texto por defecto
+            </textarea>
+        </form>
+        <form method="post" action="/send/">
+            Nombre: <input name="nickname">
+            <textarea name="text" cols="80" rows="10"
+            placeholder="Queridos Reyes Magos, este año me he portado muy
+            bien..."></textarea>
+            </form>
+
+            <form method="post" action="/send/">
+                Selecciona el color deseado:
+                <input type="color">
+            </form>
+
+            <form method="post" action="/send/">
+                Selecciona el color deseado:
+                <input type="color" value="#1BF44A">
+            </form>
+
+            <form method="post" action="/send/">
+                Selecciona la opción deseada:
+                <select>
+                    <option value="1">Opción 1</option>
+                    <option value="2">Opción 2</option>
+                    <option value="3">Opción 3</option>
+                </select>
+            </form>
+
+            <form method="post" action="/send/">
+                Nombre de usuario: <input type="text" placeholder=“Juan" tabindex="1">
+                Edad: <input type="number" min="18" placeholder="18" tabindex="3">
+                Apellidos: <input type="text" placeholder="González" tabindex="2">
+            </form>
+<br/>
+            <form method="post" action="/send/">
+                <label>Nombre de usuario:
+                    <input placeholder="Por ej: John Smith">
+                </label>
+                <label>Edad:
+                    <input type="number" min="18" placeholder="18">
+                </label>
+            </form>
+</body>
+</html>
