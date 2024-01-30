@@ -1,0 +1,10 @@
+.width {
+    width: 250px;
+    background-color: yellow;
+}
+
+.height {
+    width: 250 px;
+    height: 150px;
+    background-color: aqua;
+}

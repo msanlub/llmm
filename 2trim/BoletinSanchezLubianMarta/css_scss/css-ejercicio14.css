@@ -1,0 +1,19 @@
+body{
+    background-color: aqua;
+}
+.centro{
+    text-align: center;
+    color:blue
+}
+.f{
+    background-color: rgb(190, 172, 198);
+    color: blue;
+}
+
+.derecha{
+    text-align: right;
+    color:blue
+}
+.rojo{
+    color:red
+}

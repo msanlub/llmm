@@ -1,0 +1,20 @@
+table {
+    border: px solid #f0eaea;
+    border-collapse: collapse;
+    text-align:center
+}
+td {
+    border: 1px solid #faf8f8;
+    }
+
+th,tr.naranjita{
+    background-color: orange;
+}
+
+tr {
+    background-color:rgb(74, 231, 248)
+}
+
+td.verdequetequieroverde{
+    background-color:rgb(143, 231, 96)
+}
