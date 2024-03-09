@@ -7,6 +7,7 @@ body {
                         "footer";
     grid-template-columns:1fr;
     grid-template-rows:0.3fr 3fr 0.3fr;
+    background-color: indigo;
 }
 
 /*--------------------------------------------------*/
@@ -32,17 +33,17 @@ header{
 } 
 
 .soles img{
-    width: 100px;
+    width: 10vh;
     height: auto;
     border-radius: 50px;
     margin:20px;
     border:3px solid black;
 }
 
-/*estilo anlace ubicacion*/
+/*estilo enlace ubicacion*/
 .direccion img{
-    width: 50px;
-    height: 50px;
+    width: 4vh;
+    height: 4vh;
 }
 
 /*enlaces header*/
@@ -64,10 +65,11 @@ header a:hover{
 
 /*enlaces del header de instagram*/
 header a img{
-    width: 60px;
+    width: 6vh;
 }
 header .instagram{
-    border-right:green;
+    color:black;
+    border-right:black;
     margin-right:500px;
 }
 
@@ -75,8 +77,9 @@ header .instagram{
 /*<!-- INICIO main-->*/
 main{
     grid-area:main;
-    background-color: rgb(255, 245, 47);
+    background-image: url(/assets/img/36097.jpg);
     width: 100%;
+    border-top: 8px solid indigo;
 }
 /*imagen y comida mex*/
 main article{
@@ -110,7 +113,6 @@ main .cenefa{
 }
 
 .sabor{
-    grid-area:sabor;
     text-align: center;
     font-weight: bold;
     color:red;
@@ -120,7 +122,9 @@ main .cenefa{
     font-style:normal;
     font-size: xx-large;
     padding: 10px;
-    background-color: rgb(255, 245, 47);
+    background-image: url(/assets/img/36097.jpg);
+    background-position: center;
+    background-size: cover;
     text-shadow: 3px 2px 3px black;
 }
 .sabor h1{
@@ -134,7 +138,6 @@ main .cenefa{
 }
 /*estilo opiniones*/
 main aside{
-    grid-area:opiniones;
     display:flex;
     flex-direction: row;
     overflow-x: scroll;
