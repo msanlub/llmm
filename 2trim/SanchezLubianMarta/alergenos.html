@@ -1,45 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="author" content="Marta Sánchez Lubián">
-    <link rel="icon" sizes="64x64" href="assets/icons/solVerde.jpg">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALÉRGENOS</title>
-</head>
+    <head>
+        <link rel="stylesheet" href="/css_scss/css-alergenos.css">
+        <meta name="author" content="Marta Sánchez Lubián">
+        <link rel="icon" sizes="64x64" href="assets/icons/solAmarillo.jpg">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ALÉRGENOS</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Kablammo&family=Protest+Riot&display=swap" rel="stylesheet">
+    </head>
 <body>
     <div class="page">
         <!-- INICIO header-->
         <header>
-            <img src="assets/icons/logo.png">
-            <nav>
-            <!--enlaces a cada pagina de la web--> 
+            <div class="soles">
+                <img src="assets/icons/solVerde.jpg"><img src="assets/icons/solAmarillo.jpg"><img src="assets/icons/solRojo.jpg"><!--imagenes de logos de diferente color-->
+            </div>
+            <h3>SÍGUENOS -></h3><a class="instagram" href="https://www.instagram.com/taco_berraco?igsh=MzRlODBiNWFlZA=="><img src="assets/icons/insta.png"></a>
+        <!--enlaces a cada pagina de la web--> 
+            <div>
                 <a href="index.html">INICIO</a>
                 <a href="carta.html">CARTA</a>
                 <a href="alergenos.html">ALÉRGENOS</a>
-                <a href="https://www.google.com/maps/place/Taco+Berraco/@36.5303587,-6.2980876,15z/data=!4m6!3m5!1s0xd0dd1a8880141fd:0x57bb4b180fac8982!8m2!3d36.5303587!4d-6.2980876!16s%2Fg%2F11ss6g5kmg?entry=ttu"><img src="assets/icons/ubicacion.jpg"></a>
-            </nav>
-        </header>
-        <!--FIN header-->
+                <a class="direccion" href="https://www.google.com/maps/place/Taco+Berraco/@36.5303587,-6.2980876,15z/data=!4m6!3m5!1s0xd0dd1a8880141fd:0x57bb4b180fac8982!8m2!3d36.5303587!4d-6.2980876!16s%2Fg%2F11ss6g5kmg?entry=ttu"><img src="assets/icons/ubicacion.png"></a>
+            </div>
+    </header>
+    <!--FIN header-->
         <!--INICIO main-->
         <main>
-            <section>
+            <section class="alergenos">
                 <img src="assets/img/alergenos.png">
             </section>
-        </main>
+<!--
+            <article>
+                <h1>ENTRANTES</h1>
+                <section class="entrantes">
+                    <div class="card">
+                        <div class="image-box">
+                            <img src="assets/img/taco_berraco_jerez_guacamole_con_totopos.jpg">
+                        </div>
+                        <div class="texto">
+                            <h3>GUACAMOLE</h3>
+                        </div>
+                        <img class="alergeno" src="/assets/icons/alergenos/frutosCascara.png">
+                    </div>
+                    <div class="card">
+                        <div class="image-box">
+                            <img src="assets/img/taco_berraco_jerez_nachos_con_queso.jpg">
+                        </div>
+                        <div class="texto">
+                            <h3>NACHOS</h3>
+                            <p>Berraquera de queso fundido con jalapeños,chile con carne y nuestro pico de gallo.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-box">
+                            <img src="assets/img/taco_berraco_jerez_tostada_de_atun.jpg">
+                        </div>
+                        <div class="texto">
+                            <h3>TOSTA DE ATÚN</h3>
+                            <p>Atún curadito en nuestra salsa marisquera, con aguacate, sobre una tostada de maíz.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-box">
+                            <img src="assets/img/taco_berraco_jerez_tostada_de_langostino.jpg">
+                        </div>
+                        <div class="texto">
+                            <h3>TOSTA DE LANGOSTINO</h3>
+                            <p>Langostinos a la plancha con salsa picante, crema agria y aguacate sobre tostada de maíz.</p>
+                        </div>
+                    </div>                        
+                    <div class="card">
+                        <div class="image-box">
+                            <img src="assets/img/taco_berraco_jerez_tostada_de_pollo.jpg">
+                        </div>
+                        <div class="texto">
+                            <h3>TOSTA DE POLLO</h3>
+                            <p>Pollo con frijoles, crema agria, aguacate, lechuga y tomate sobre tostada de maíz.</p>
+                        </div>
+                    </div>
+                </section>
+                <h1>TACOS</h1>
+                <section class="tacos">
+                    <div class="card">
+                        <div class="image-box">
+                            <img src="assets/img/taco_berraco_jerez_taco_de_cochinilla_pibil.jpg">
+                        </div>
+                        <div class="texto">
+                            <h3>COCHINITA PIBIL</h3>
+                            <p>Puerquito adobado con el secreto Maya y cocinado lento, tranquiiiiilo, a su rollo.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-box">
+                            <img src="assets/img/taco_berraco_jerez_taco_al_pastor.jpg">
+                        </div>
+                            <div class="texto">
+                                <h3>AL PASTOR</h3>
+                                <p>Secreto ibérico adobado al estilo CDMX con piña y salsa morita.</p>
+                            </div>
+                    </div>
+                        <div>
+                        </div>
+                        <div class="card">
+                            <div class="image-box">
+                                <img src="assets/img/taco_berraco_jerez_taco_birria.jpg">
+                            </div>
+                            <div class="texto">
+                                <h3>BIRRIA</h3>
+                                <p>Guiso de res con chile guajillo...pinche sabroso.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image-box">
+                                <img src="assets/img/taco_berraco_jerez_taco_carnitas.jpg">
+                            </div>
+                            <div class="texto">
+                                <h3>CARNITAS</h3>
+                                <p>Carnecita,grasita,cuerito...Todo el cerdito en su jugo y picadito.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image-box">
+                                <img src="assets/img/taco_berraco_jerez_taco_de_tinga_de_pollo.jpg">
+                            </div>
+                            <div class="texto">
+                                <h3>TINGA</h3>
+                                <p>Pollo todo desmenuzadito con chile chipotle y tomate. Picante.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image-box">
+                                <img src="assets/img/taco_berraco_jerez_taco_traidor.jpg">
+                            </div>
+                            <div class="texto">
+                                <h3>TRAIDOR</h3>
+                                <p>Si eres de firmes convicciones aquí tienes verduras asaditas,0 km, del mercado.</p>
+                            </div>
+                        </div>
+                </section>
+                <h1>QUESADILLAS</h1>
+                <section class="quesadillas">
+                    <div class="card">
+                        <div class="image-box">
+                            <img src="assets/img/taco_berraco_jerez_quesadilla_de_chicharron.jpg">
+                        </div> 
+                        <div class="texto">
+                            <h3>QUESADILLA DE CHICHARRÓN</h3>
+                            <p>Chicharrón mexicano en costra de queso, con salsa de lima y chile.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-box">
+                            <img src="assets/img/taco_berraco_jerez_quesadilla_de_pollo.jpg">
+                        </div>
+                        <div class="texto">
+                            <h3>QUESADILLA DE POLLO</h3>
+                            <p>Quesitos fundidos, pollito adobado en naranja con lechuga, mayonesa de chipotle y aguacate..</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-box">
+                            <img src="assets/img/taco_berraco_jerez_quesadilla_de_res.jpg">
+                        </div>
+                        <div class="texto">
+                            <h3>QUESADILLA DE RES</h3>
+                            <p>Entrecot nacional con tamarindo, quesazo y salda de tomatillo verde.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-box">
+                            <img src="assets/img/taco_berraco_jerez_quesadilla_traidora_con_queso.jpg">
+                        </div>
+                        <div class="texto">
+                            <h3>QUESADILLA TRAIDORA</h3>
+                            <p>Con verduras guisadas y un jugoso queso a la plancha.</p>
+                        </div>
+                    </div>
+                </section>
+                <h1>ESPECIALES</h1>
+                <section class="especiales">
+                    <div class="card">
+                        <div class="image-box">
+                            <img src="assets/img/sexMachine.jpg">
+                        </div>
+                        <div class="texto">
+                            <h3>SEX MACHINE</h3>
+                            <p>Costilla de cerdo macerada en tequila y soja, cocinada a baja temperatura durante muchas horas!! Acompañada de nuestra salsa epecial.</p>
+                        </div>
+                    </div>
+                </section>
+-->
         <!--FIN main-->
         <!--INICIO footer-->
         <footer>
-            <nav>
+            <section class="seccion3">
+                <h3>HAZ TU PEDIDO -></h3><!--enlace a uber eats-->
+                <a class="uber" href="https://www.ubereats.com/es/store/taco-berraco/F5_5vFT_UJiAdNNm5dkRfw?utm_campaign=place-action-link&utm_medium=organic&utm_source=google"><img src="assets/icons/uber.png"></a><!--enlace a la página de uber eats donde se puede pedir a domicilio-->
                 <a href="conocenos.html">CONÓCENOS</a><!--enlace a galería de imagenes de la plaza de abastos y del sitio-->
                 <a href="contacto.html">CONTACTO</a><!--enlace a formulario de contacto-->
                 <a href="trabajaConNosotros.html">TRABAJA CON NOSOTROS</a><!--enlace a formulario para dejar el cv-->
-            </nav>
-            <nav>
-                <h4>SÍGUENOS </h4><a href="https://www.instagram.com/taco_berraco?igsh=MzRlODBiNWFlZA=="><img src="assets/icons/insta.png"></a>
-            </nav>
+            </section> 
         </footer>
         <!--FINAL footer-->
+        </main>
     </div>
 </body>
 </html>

@@ -1,12 +1,6 @@
-body {
+body{
     width: 100%;
     height: 100%;
-    display:grid;
-    grid-template-areas:"header"
-                        "main"
-                        "footer";
-    grid-template-columns:1fr;
-    grid-template-rows:0.3fr 3fr 0.3fr;
     background-color: indigo;
 }
 
@@ -81,102 +75,62 @@ header .instagram{
     border-right:black;
     margin-right:500px;
 }
-
 /*--------------------------------------------------*/
-/*<!-- INICIO main-->*/
-main{
-    grid-area:main;
-    background-image: url(/assets/img/36097.jpg);
-    width: 100%;
-    border-top: 8px solid indigo;
-}
-/*imagen y comida mex*/
-main article{
-    display:grid;
-    grid-template-areas:"seccion1"
-                        "cenefa"
-                        "seccion2";
-    grid-template-columns: 1fr;
-    grid-template-rows:2fr 0.5fr 1fr;
-}
-/*imagen*/
-.seccion1{
-    grid-area:seccion1;
-    background-image: url("/assets/img/taco_berraco_jerez_hero.jpg");
-    background-size: cover;
-    background-position:center;
-    box-shadow: 2px 2px 2px black;
-
-}
-
-/*cenefa*/
-main .cenefa{
-    grid-area:cenefa;
-    background-image: url(/assets/img/3601088.jpg);
-    background-size: contain;
-}
-
-/*comida mex sabor chingon*/
-.seccion2{
-    grid-area: seccion2;
-}
-
-.sabor{
+/*<!-- INICIOmain-->*/
+main {
+    background-color:indigo;
     text-align: center;
-    font-weight: bold;
-    color:red;
-    background-color: white;
     font-family: "Grandstander", cursive;
     font-optical-sizing:auto;
     font-style:normal;
     font-size: xx-large;
+    padding-top:30vh;
+    padding-bottom: 30vh;
+    color:white;
+}
+
+section fieldset{
     padding: 10px;
-    background-image: url(/assets/img/36097.jpg);
-    background-position: center;
-    background-size: cover;
-    text-shadow: 3px 2px 3px black;
-}
-.sabor h1{
-    font-size: 70px;
-}
-#logo{
-    width: auto;
-    height: auto;
-    border:3px solid black;
-    border-radius: 220px;
-}
-/*estilo opiniones*/
-main aside{
-    display:flex;
-    flex-direction: row;
-    overflow-x: scroll;
-    max-height: 340px;
-    padding: 5px;
-    max-width: 1880px;
-}
-main aside img{
-    border:3px solid black;
-    border-radius: 20px;
-    max-width: 550px;
-    margin:6px;
 }
 
-/*color de comida mex*/
-h1:hover{
-    color:green;
-    text-shadow: 3px 2px 3px red;
+textarea{
+    width: 80vh;
+    height: 40vh;
+    border:solid 8px yellow;
+}
+textarea:hover{
+    border-color: green;
+}
+input{
+    border:solid 3px yellow;
+}
+input:hover{
+    border-color: green;
+}
+input:active{
+    border-color:red ;
+}
+section .soles{
+    position: relative;
+    left: 35%;
+    margin:10vh;
 }
 
-/*color de ponte berraco*/
-h4:hover{
-    color:green;
-    text-shadow: 3px 2px 3px red;
+.datos{
+    margin:10vh;
+    margin-top:0vh;
+    border-color:yellow;
+}
+
+.curriculum{
+    border-color:yellow;
 }
 
 /*--------------------------------------------------*/
 /*<!-- INICIOfooter-->*/
 .seccion3{
     width: auto;
+    height: 20%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -206,6 +160,10 @@ footer a {
     font-size: xx-large;
 }
 
+footer h3{
+    color:black;
+    background-color: green;
+}
 footer a:hover{
     color:yellow;
     text-shadow: 3px 2px 3px black;
@@ -216,7 +174,10 @@ h3:hover{
     text-shadow: 3px 2px 3px black;
 }
 
-
-
-
+main h3:hover{
+        color:green;
+        text-shadow: 3px 2px 3px black;
+        font-weight: 700;
+    
+}
 

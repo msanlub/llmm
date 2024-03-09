@@ -11,7 +11,7 @@ header{
     flex-direction:row;
     align-items:center;
     justify-content: space-between;
-    background-color: rgb(83, 39, 129);
+    background-color: indigo;
     font-family: "Grandstander", cursive;
     font-optical-sizing:auto;
     font-style:normal;
